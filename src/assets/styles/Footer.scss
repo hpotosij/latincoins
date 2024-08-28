@@ -1,0 +1,110 @@
+.about-section2 {
+  background-color: #0d1116 !important; /* Fondo negro */
+  color: white; /* Texto blanco para contraste */
+  display: flex;
+  justify-content: space-between !important; /* Distribuir el espacio entre los elementos */
+  align-items: center !important; /* Centrar verticalmente */
+  padding: 1% 20% !important; /* Padding general del contenedor */
+  gap: 5rem !important; /* Espacio entre las secciones */
+
+  /* Línea horizontal arriba del footer */
+  border-top: 3px solid #333; /* Línea gris oscuro (ajusta el color según sea necesario) */
+
+  .image-wrapper {
+      flex: 1;
+      margin-right: 2rem; /* Separar el logo del contenido central */
+      img {
+          max-height: 160px; /* Ajusta el tamaño según sea necesario */
+          border-radius: 100px; /* Estilo opcional para redondear las esquinas */
+      }
+  }
+  .h2{
+    margin: 0 !important;
+    padding: 0 0 !important;
+    text-align:left !important;
+  }
+
+  .footer-center {
+      flex: 10; /* Permite que esta sección ocupe más espacio */
+      display: flex; /* Asegura que el contenedor de los enlaces use flex */
+      flex-direction: column; /* Organiza los enlaces en columna */
+      align-items: left; /* Centra los enlaces horizontalmente */
+
+      .footer-links {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column; /* Organiza los enlaces en columna */
+          align-items: left; /* Centra los enlaces horizontalmente */
+          gap: 0.5rem; /* Espacio entre los enlaces */
+
+          li {
+              a {
+                  color: white !important;
+                  text-decoration: none;
+
+                  &:hover {
+                      text-decoration: underline;
+                  }
+              }
+          }
+      }
+      .footer-links2, .p {
+        padding: 0rem 0rem !important; /* Ajusta el padding de los enlaces */
+        margin: 0rem 0rem !important; /* Ajusta el margen de los enlaces */
+        gap: 0rem !important; /* Espacio entre los enlaces */
+      }
+  }
+
+  .footer-right {
+      flex: 1;
+      margin-left: 2rem; /* Separar la info del contenido central */
+      text-align: left; /* Alinear el texto a la izquierda */
+      p {
+          margin: 0;
+      }
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media screen{ 
+    @media(max-width: 768px) {
+      flex-direction: column; /* Cambia la disposición de las secciones a vertical */
+      align-items: flex-start !important;
+      gap: 0rem !important; /* Espacio entre las secciones */
+   
+
+      .image-wrapper,
+      .footer-center {
+          margin: 0rem !important; /* Quita el margen en móviles */
+         width: 100% !important; /* Ajusta el ancho al 100% */
+         padding: 2rem 0rem  !important; /* Ajusta el padding en móviles */
+         box-sizing:border-box !important; /* Ajusta el modelo de caja */
+         align-items: flex-start !important; /* Centra los enlaces horizontalmente */
+         gap: 0rem !important; /* Espacio entre las secciones */
+      }
+
+      .footer-center {
+          align-items:flex-start !important; /* Centra los enlaces horizontalmente */
+          padding: 0rem 0rem !important; /* Ajusta el padding de los enlaces */
+          gap: 0rem !important; /* Espacio entre los enlaces */
+      }
+      
+  
+      img {
+          max-width: 100%; /* Ajusta el tamaño de la imagen en móviles */
+          margin-bottom: 0rem;
+          padding: 0rem 0rem !important; /* Ajusta el padding de la imagen */
+      }
+      .footer-links {
+        flex:1;
+        align-items: flex-start !important; /* Alinear los enlaces a la izquierda */
+        padding: 0rem 0rem !important; /* Ajusta el padding de los enlaces */
+      }
+      .footer-links2, .p {
+        padding: 0rem 0rem !important; /* Ajusta el padding de los enlaces */
+        margin: 0rem 0rem !important; /* Ajusta el margen de los enlaces */
+        gap: 0rem !important; /* Espacio entre los enlaces */
+      }
+    }
+  }
+}

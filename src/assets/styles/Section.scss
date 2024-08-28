@@ -1,0 +1,58 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.background-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 2%);
+  position: relative;
+  width: 100%;
+  height: 450px; /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute; /* Asegura que la imagen esté en el fondo */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); /* Ajusta la escala aquí para reducir el tamaño */
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* O usa "contain" para un ajuste más controlado */
+  background-position: center;
+  opacity: 0.4; 
+}
+
+.section-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem; /* Ajusta el tamaño según sea necesario */
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.section-content {
+  margin-top: 2rem;
+  padding: 1rem 2rem; /* Ajusta el padding si necesitas más espacio alrededor del contenido */
+  color: white;
+  z-index: 1;
+  text-align: left; /* Alinea los textos a la izquierda */
+}
+
+.section-content p {
+  margin-left: 4rem; /* Añade un margen izquierdo para separar el texto del borde */
+  margin-right: 4rem; /* Añade un margen derecho para separar el texto del borde */
+}
+
+.section-content strong {
+  font-weight: bold;
+}
